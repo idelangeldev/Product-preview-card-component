@@ -65,3 +65,14 @@
     }
   }
 }
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  display: none;
+
+  &-link:link,
+  &-link:visited {
+    color: hsl(228, 45%, 44%);
+  }
+}
