@@ -1,0 +1,67 @@
+.main {
+  background-color: $white-color;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  max-width: 60rem;
+  max-height: 45rem;
+  border-radius: 10px;
+  overflow: hidden;
+
+  @media only screen and (max-width: $bp-phone-su) {
+    grid-template-columns: 1fr;
+    max-height: initial;
+  }
+
+  &_img {
+    width: 100%;
+  }
+
+  &_text-box {
+    padding: 3.2rem;
+
+    @media only screen and (max-width: $bp-phone-su) {
+      padding: 2.4rem;
+    }
+  }
+
+  &_description {
+    color: $aurometalSaurus-color;
+    margin-bottom: 2.6rem;
+    line-height: 1.65;
+
+    @media only screen and (max-width: $bp-phone-su) {
+      margin-bottom: 2.4rem;
+    }
+  }
+
+  &_price {
+    &-box {
+      display: flex;
+      align-items: center;
+      gap: 1.9rem;
+      margin-bottom: 2.61rem;
+
+      @media only screen and (max-width: $bp-phone-su) {
+        margin-bottom: 2rem;
+      }
+    }
+
+    &--huge {
+      color: $DeepAquamarine-color;
+      font-family: $font-primary;
+      font-size: 3.2rem;
+      font-weight: 700;
+    }
+    &--small {
+      color: $aurometalSaurus-color;
+      font-size: 1.3rem;
+      text-decoration: line-through;
+    }
+
+    &--img {
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+body {
+  font-family: $font-secondary;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.heading-primary {
+  color: $gunmetal-color;
+  font-family: $font-primary;
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 2.4rem;
+
+  @media only screen and (max-width: $bp-phone-su) {
+    margin-bottom: 1.6rem;
+  }
+}
+
+.subheading {
+  color: $aurometalSaurus-color;
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.21;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+
+  @media only screen and (max-width: $bp-phone-su) {
+    margin-bottom: 1.2rem;
+  }
+}
+
+.ml-sm {
+  margin-left: 1rem;
+}
