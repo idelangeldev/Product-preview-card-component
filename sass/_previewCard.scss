@@ -13,11 +13,18 @@
     max-height: initial;
   }
 
-  &_img {
+  &__pic {
+    @media only screen and (max-width: $bp-phone-su) {
+      margin-bottom: -0.4rem;
+    }
+  }
+
+  &__img {
     width: 100%;
   }
 
-  &_text-box {
+  &__text-box {
+    display: grid;
     padding: 3.2rem;
 
     @media only screen and (max-width: $bp-phone-su) {
@@ -25,7 +32,7 @@
     }
   }
 
-  &_description {
+  &__description {
     color: $aurometalSaurus-color;
     margin-bottom: 2.6rem;
     line-height: 1.65;
@@ -35,7 +42,7 @@
     }
   }
 
-  &_price {
+  &__price {
     &-box {
       display: flex;
       align-items: center;
@@ -43,7 +50,7 @@
       margin-bottom: 2.61rem;
 
       @media only screen and (max-width: $bp-phone-su) {
-        margin-bottom: 2rem;
+        margin-bottom: 1.9rem;
       }
     }
 
@@ -71,8 +78,8 @@
   text-align: center;
   display: none;
 
-  &-link:link,
-  &-link:visited {
+  &__link:link,
+  &__link:visited {
     color: hsl(228, 45%, 44%);
   }
 }

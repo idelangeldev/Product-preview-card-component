@@ -6,20 +6,26 @@
     text-decoration: none;
     font-size: 1.4rem;
     font-weight: 700;
-    padding: 1.55rem 6.34rem;
+    padding: 1.5rem 6.144rem;
     border-radius: 8px;
+
+    /* only for the .btn itself */
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+
     transition: all 0.3s;
   }
 
-  &--primary:link,
-  &--primary:visited {
+  &--primary {
     background-color: $DeepAquamarine-color;
     color: $white-color;
     display: flex;
     align-items: center;
-    line-height: 1.21;
+    line-height: 1.2;
     display: flex;
     align-items: center;
+    width: 100%;
 
     @media only screen and (max-width: $bp-phone-su) {
       justify-content: center;
